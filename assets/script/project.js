@@ -94,3 +94,14 @@
             document.querySelector("#table__of__contents").innerHTML += `<li data-cursor-event="link"><a href="#${c.toLowerCase().replaceAll(" ", "_")}">${c}</a></li>`;
             document.querySelector("#footer__table").innerHTML += `<p><a data-cursor-event="link" href="#${c.toLowerCase().replaceAll(" ", "_")}">${c}</a></p>`
 }); })()
+
+// darkmode button
+let darkmode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+const setDarkmode = (isMode) => {
+    darkmode = isMode;
+    document.querySelector("#darkmode__button__moon").style.display = isMode ? "unset" : "none";
+    document.querySelector("#darkmode__button__sun").style.display = !isMode ? "unset" : "none";
+    if (isMode) document.body.classList.add("dark");
+    else document.body.classList.remove("dark");
+}
+setDarkmode(darkmode);

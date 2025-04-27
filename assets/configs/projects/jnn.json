@@ -3,7 +3,7 @@
     "description_short": "JNN is a PyTorch-like neural networking library from scratch in java",
     "description": "JNN is a PyTorch-like neural networking library from scratch in java",
     "categories": [ "app", "ai", "in progress" ],
-    "logo": "assets/media/projects/jNN/jNN.svg",
+    "logo": "assets/media/projects/jnn/jNN.svg",
     "nav_links": [
         { "icon": "assets/media/icon/github.svg", "link": "https://github.com/c4vxl/jNN/" }
     ],

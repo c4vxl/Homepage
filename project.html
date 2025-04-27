@@ -45,7 +45,7 @@
     <!--Cursor module-->
 
 </head>
-<body>
+<body class="dark">
     <div class="notification__container" id="notification__container"></div>
 
     <div id="not__a__proj__modal">
@@ -55,6 +55,11 @@
 
     <div class="back__button nav__button" data-cursor-event="default">
         <img src="assets/media/icon/back.svg" alt="back">
+    </div>
+
+    <div class="darkmode__button nav__button" data-cursor-event="default" onclick="setDarkmode(!darkmode)">
+        <img src="assets/media/icon/moon.svg" alt="moon" id="darkmode__button__moon">
+        <img src="assets/media/icon/sun.svg" alt="sun" id="darkmode__button__sun" style="display: none;">
     </div>
 
     <div class="right__buttons">

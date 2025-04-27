@@ -97,7 +97,7 @@ msgForm?.addEventListener("submit", () => {
 
 
 // Projects
-if (window.location.pathname.endsWith("index.html")) {
+if (!window.location.pathname.endsWith("project.html")) {
     fetch("assets/configs/projects.json")
         .then(projects => projects.json())
         .then(projects => projects.sort((a, b) => a.pos - b.pos).forEach(proj => {
