@@ -1,0 +1,21 @@
+.navbar {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    gap: 0;
+    backdrop-filter: blur(20px);
+    z-index: 9999999;
+}
+.navbar a {
+    color: white;
+    padding: 5px 20px;
+}
+.navbar:has(a:hover) a:not(:hover) {
+    opacity: 0.4;
+}
+
+@media (max-width: 450px) {
+    .navbar { display: none; }
+}

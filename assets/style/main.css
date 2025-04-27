@@ -1,0 +1,233 @@
+:root {
+    --bg: #101011;
+    --bg-1: #0a0a0a;
+    --bg-2: #7a79790a;
+    --border: #7a797980;
+    --text: rgb(212, 207, 207);
+    --primary: #dbd7d7;
+    --font: 'Courier New', Courier, monospace;
+}
+
+body, html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    background-image: linear-gradient(161deg, var(--bg) 20%, var(--bg-1) 88%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+* {
+    color: var(--text);
+    transition: .2s;
+    box-sizing: border-box;
+    font-family: var(--font);
+    outline: none;
+}
+
+::-webkit-scrollbar { width: 1px; height: 1px; }
+::-webkit-scrollbar-thumb { background-color: var(--text); }
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+a:not(.primary)::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    background: var(--border);
+    width: 0;
+    height: 2px;
+    transition: .2s;
+}
+a:hover:after { width: 100%; }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.arrow__left {
+    content: "→";
+    font-size: larger;
+    font-weight: 900;
+    font-family: Verdana;
+}
+
+.blur {
+    position: fixed;
+    width: 20ch;
+    aspect-ratio: 1;
+    --c: #ffffffb7;
+    background: radial-gradient(var(--c), transparent);
+    opacity: .5;
+    top: 0;
+    left: 0;
+    margin: auto;
+    filter: blur(30px);
+}
+
+.background__star__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 999;
+}
+.background__star__mask .star {
+    position: absolute;
+    color: var(--text);
+    opacity: .3;
+    font-size: 12px;
+    user-select: none;
+    transform: translate(-50%, -50%);
+}
+
+.hr { display: block; height: 0.2px; background: var(--text); opacity: .1; width: 97%; max-width: 80ch; }
+br { user-select: none; }
+
+section {
+    width: 100%;
+    min-height: 70%;
+    max-width: 140ch;
+}
+
+.avatar {
+    background: var(--text);
+    width: 10ch;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 300px;
+    border: 2px solid var(--border);
+    padding: 10px;
+}
+
+/**
+ * Titles
+ */
+.title {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+/**
+ * Inputs
+ */
+.primary {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 20px;
+    overflow: hidden;
+    background: var(--bg-2);
+    backdrop-filter: blur(10px);
+}
+.primary:not(:hover) .blur { opacity: 0; }
+
+textarea {
+    resize: none;
+    min-height: 30ch;
+}
+
+input {
+    height: 2ch;
+    text-align: center;
+    flex-grow: 1;
+}
+
+button.primary {
+    padding: 0;
+    height: 5ch;
+    cursor: pointer;
+}
+button.primary:hover {
+    background: #181717;
+}
+
+/**
+ * Social links page
+ */
+.social .primary {
+    width: 50ch;
+    aspect-ratio: 1;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.social .primary img {
+    width: 5ch;
+}
+
+/**
+ * Projects page
+ */
+ .project__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.project__list li {
+    width: 40ch;
+    height: 20ch;
+    font-size: small;
+    position: relative;
+}
+
+.project__list li .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/**
+ * Footer
+ */
+.footer {
+    min-height: 40ch;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer .row { width: 100%; }
+.footer .title {
+    font-size: 1.3rem;
+}
+.footer .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 20ch;
+}
+.footer .section p {
+    margin: 0;
+}

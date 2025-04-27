@@ -1,0 +1,26 @@
+[
+    {
+        "pos": 3,
+        "name": "JNN",
+        "description": "I am currently building a PyTorch-like neural networking library from scratch in java",
+        "url": "project.html?id=jnn"
+    },
+    {
+        "pos": 1,
+        "name": "c4vxl cloud",
+        "description": "c4vxl cloud is a free to use cloud plattform I build myself",
+        "url": "project.html?id=c4vxl_cloud"
+    },
+    {
+        "pos": 2,
+        "name": "8back30",
+        "description": "I designed and programmed the homepage of the band 8back30",
+        "url": "project.html?id=8back30"
+    },
+    {
+        "pos": 0,
+        "name": "Sunday5",
+        "description": "I programmed the homepage of the band Sunday5",
+        "url": "https://sunday5.de"
+    }
+]

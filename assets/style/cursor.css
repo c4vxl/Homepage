@@ -1,0 +1,40 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 0.5ch;
+    aspect-ratio: 1;
+
+    border: 2px solid var(--text);
+    border-radius: 300px;
+    background: var(--text);
+    opacity: 0;
+
+    padding: 14px;
+    z-index: 9999999;
+}
+
+body:hover > .cursor { opacity: 1; }
+
+.cursor .cursor__icon {
+    width: 100%;
+    max-width: 3ch;
+    object-fit: contain;
+    display: none;
+}
+
+*[data-cursor-event]:hover { cursor: none; }
+body:has(*[data-cursor-event]:hover) .cursor { background: transparent; width: 5ch; }
+body:has(*[data-cursor-event="link"]:hover) .cursor #cursor__icon__link { display: unset; }
+body:has(*[data-cursor-event="mail"]:hover) .cursor #cursor__icon__mail { display: unset; }
+*[data-cursor-event="default"]:hover { cursor: pointer; }
+body:has(*[data-cursor-event="default"]:hover) .cursor { opacity: 0; }
+
+@media (max-width: 700px) {
+    .cursor { display: none; }
+}

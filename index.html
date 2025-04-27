@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>c4vxl</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="assets/media/icon/c4vxl.png" type="image/x-icon">
+
+    <meta content="c4vxl" property="og:title" />
+    <meta property="og:site_name" content="c4vxl" />
+    <meta content="Hey there. I'm c4vxl. I do cool stuff with AI, Web and App Technologies!" property="og:description" />
+    <meta content="https://info.c4vxl.de/assets/media/icon/c4vxl.png" property="og:url" />
+    <meta content="https://info.c4vxl.de/assets/media/icon/c4vxl.png" property="og:image" />
+    <meta content="#1d1d1f" data-react-helmet="true" name="theme-color" />
+
+    <!--Main module-->
+    <link rel='stylesheet' href='assets/style/main.css'>
+    <script defer src='assets/script/main.js'></script>
+    <!--Main module-->
+
+    <!--Cards module-->
+    <link rel='stylesheet' href='assets/style/cards.css'>
+    <script defer src='assets/script/cards.js'></script>
+    <!--Cards module-->
+
+    <!--Snap Scroll module-->
+    <link rel='stylesheet' href='assets/style/snapscroll.css'>
+    <script defer src='assets/script/snapscroll.js'></script>
+    <!--Snap Scroll module-->
+
+    <!--Cursor module-->
+    <link rel='stylesheet' href='assets/style/cursor.css'>
+    <script defer src='assets/script/cursor.js'></script>
+    <!--Cursor module-->
+
+    <!--Notifications module-->
+    <link rel='stylesheet' href='assets/style/notifications.css'>
+    <script defer src='assets/script/notifications.js'></script>
+    <!--Notifications module-->
+
+    <!--Navbar module-->
+    <link rel='stylesheet' href='assets/style/navbar.css'>
+    <!--Navbar module-->
+</head>
+<body>
+    <div class="blur look__at__mouse" style="width: 50ch; top: -25ch; left: -25ch; --c: rgb(51, 50, 50);"></div>
+    <div class="blur look__at__mouse" style="width: 40ch; top: 90%; left: 90%;"></div>
+
+    <div class="notification__container" id="notification__container"></div>
+
+    <div class="navbar row">
+        <a data-cursor-event="default" onclick="scrollToPage(1)">About</a>
+        <a data-cursor-event="default" onclick="scrollToPage(2)">Projects</a>
+        <a data-cursor-event="default" onclick="scrollToPage(3)">Social</a>
+        <a data-cursor-event="default" onclick="scrollToPage(4)">Contact</a>
+    </div>
+
+    <div class="snap__scroll__container" id="pages">
+        <div class="sections__panel" data-cursor-event="none">
+            <div class="dots"></div>
+        </div>
+
+        <div class="content">
+            <div class="snap__scroll__section">
+                <div class="background__star__mask" id="background__star__mask"></div>
+
+                <p class="title" id="intro__title"></p>
+                <br>
+                <p class="subtitle">Hi, my name is Benjamin and I love computers!</p>
+                <br><br>
+                <button class="primary" style="padding: 5px 20px" onclick="scrollToPage(1)" data-cursor-event="none">Let's get started</button>
+            </div>
+
+            <div class="snap__scroll__section">
+                <section id="page__about">
+                    <div class="row">
+                        <img src="assets/media/icon/c4vxl.png" class="avatar" alt="c4vxl logo">
+
+                        <div>
+                            <p class="title">About me</p>
+                            <p class="subtitle">Hey there. I'm Benjamin aka. <b>c4vxl</b>. I do cool stuff with AI, Web and App Technologies!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <span class="hr"></span>
+                    <br>
+
+                    <div class="column">
+                        <div class="primary" threeD-card data-threeD-card-strength="2">
+                            <p style="font-size: 1.4rem; margin-top: 0;">Skills:</p>
+                            <li>Web Technologies: HTML, CSS, JS, PHP</li>
+                            <li>AI: Python, NumPy, PyTorch, Tensorflow, HuggingFace</li>
+                            <li>Apps and Serverside: Java, Kotlin, Python</li>
+                            <li>General: Git, GitHub, Figma, Linux (I use arch btw), etc.</li>
+                        </div>
+    
+                        <div class="primary" threeD-card data-threeD-card-strength="2">
+                            <p style="font-size: 1.4rem; margin-top: 0;">Languages:</p>
+                            <li>German</li>
+                            <li>English</li>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="snap__scroll__section">
+                <section id="page__projects">
+                    <p class="title">Projects</p>
+                    <p class="subtitle">Here's an overview of some of my past projects</p>
+                    <br>
+                    <span class="hr"></span>
+                    <br>
+
+                    <div class="project__list">
+                        <!--JS will generate here-->
+
+                        <li data-cursor-event="link" class="primary" threeD-card onclick="window.open('https://github.com/c4vxl/?tab=repositories')">
+                            <div class="blur"></div>
+
+                            <p class="title">And many more...</p>
+                        </li>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="snap__scroll__section">
+                <section id="page__social">
+                    <p class="title">Social</p>
+                    <p class="subtitle">Links to my online presense</p>
+                    <br>
+                    <span class="hr"></span>
+                    <br>
+
+                    <div id="social" class="social row">
+                        <div class="primary column" threeD-card data-cursor-event="link" onclick="window.open('https://youtube.com/@c4vxl')">
+                            <img src="assets/media/icon/youtube.svg" alt="YouTube icon">
+
+                            <p class="title">YouTube</p>
+                            <p class="subtitle">@c4vxl</p>
+
+                            <div class="blur"></div>
+                        </div>
+
+                        <div class="primary column" threeD-card data-cursor-event="link" onclick="window.open('https://github.com/c4vxl')">
+                            <img src="assets/media/icon/github.svg" alt="GitHub icon">
+
+                            <p class="title">GitHub</p>
+                            <p class="subtitle">@c4vxl</p>
+
+                            <div class="blur"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="snap__scroll__section">
+                <section id="page__contact">
+                    <p class="title">Contact</p>
+                    <p class="subtitle">Here are some ways to contact me</p>
+                    <br>
+                    <span class="hr"></span>
+                    <br>
+
+                    <div class="row" style="justify-content: space-between;">
+                        <div style="max-width: 60ch; width: 100%;">
+                            <p>Leave a message</p>
+                            <form onsubmit="return false;" class="column" id="message__form">
+                                <input name="name" id="name" type="text" class="primary" placeholder="Your Name" required>
+                                <input name="mail" id="mail" type="email" class="primary" placeholder="Your E-Mail" required>
+    
+                                <textarea name="msg" id="msg" class="primary" placeholder="Your message"></textarea>
+                                <span class="hr"></span>
+                                <button class="primary" type="submit" data-cursor-event="none">Send</button>
+                            </form>
+                        </div>
+
+                        <p>or</p>
+
+                        <div>
+                            <p>Send a mail to:</p>
+                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail">
+                                <p class="title" style="font-size: 1.4rem; user-select: none;">contact@c4vxl.de</p>
+                                <p class="subtitle">For collaboration requests, questions or general inquiries</p>
+                            </div>
+
+                            <br>
+
+                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail">
+                                <p class="title" style="font-size: 1.4rem; user-select: none;">idea@c4vxl.de</p>
+                                <p class="subtitle">For project ideas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="snap__scroll__section">
+                <section class="footer">
+                    <div class="row" style="align-items: start; justify-content: center;">
+                        <div class="section">
+                            <p class="title">Pages</p>
+                            <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                            <p><a data-cursor-event="link" onclick="scrollToPage(1)">About</a></p>
+                            <p><a data-cursor-event="link" onclick="scrollToPage(2)">Projects</a></p>
+                            <p><a data-cursor-event="link" onclick="scrollToPage(3)">Social</a></p>
+                            <p><a data-cursor-event="link" onclick="scrollToPage(4)">Contact</a></p>
+                        </div>
+            
+                        <br>
+                
+                        <div class="section">
+                            <p class="title">Social</p>
+                            <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                            <p><a href="https://github.com/c4vxl/" data-cursor-event="link">c4vxl on GitHub</a></p>
+                            <p><a href="https://youtube.com/@c4vxl" data-cursor-event="link">c4vxl on YouTube</a></p>
+                        </div>
+                
+                        <br>
+                
+                        <div class="section">
+                            <p class="title">Contact</p>
+                            <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                            <p><a href="mailto:contact@c4vxl.de" data-cursor-event="mail">contact@c4vxl.de</a></p>
+                            <p><a href="mailto:idea@c4vxl.de" data-cursor-event="mail">idea@c4vxl.de</a></p>
+                        </div>
+                    </div>
+            
+                    <p><a href="https://github.com/c4vxl/Homepage" data-cursor-event="link">View source code</a></p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

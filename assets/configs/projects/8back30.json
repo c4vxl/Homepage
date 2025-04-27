@@ -1,0 +1,16 @@
+{
+    "title": "8Back30 - Homepage",
+    "description_short": "I build the website for the band 8Back30",
+    "description": "I designed and programmed the website for the band 8Back30",
+    "categories": [ "web", "complete" ],
+    "logo": "assets/media/projects/8back30/logo.png",
+    "nav_links": [
+        { "icon": "assets/media/icon/link.svg", "link": "https://8back30.de" }
+    ],
+    "links": [
+        { "name": "Visit Website", "src": "https://8back30.de" }
+    ],
+    "technologies": [ "HTML", "CSS", "JavaScript", "PHP", "Figma" ],
+    "contributors": [ { "name": "c4vxl", "href": "https://c4vxl.de" } ],
+    "content": {}
+}

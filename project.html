@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>$name$</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="shortcut icon" href="assets/media/icon/c4vxl.png" type="image/x-icon">
+
+    <meta content="c4vxl - Projects" property="og:title" />
+    <meta property="og:site_name" content="c4vxl - $name$" />
+    <meta content="$description$" property="og:description" />
+    <meta content="https://info.c4vxl.de/assets/media/icon/c4vxl.png" property="og:url" />
+    <meta content="https://info.c4vxl.de/assets/media/icon/c4vxl.png" property="og:image" />
+    <meta content="#1d1d1f" data-react-helmet="true" name="theme-color" />
+
+    <!--Main module-->
+    <link rel='stylesheet' href='assets/style/main.css'>
+    <script defer src='assets/script/main.js'></script>
+    <!--Main module-->
+    
+    <!--Snap Scroll module-->
+    <link rel='stylesheet' href='assets/style/cards.css'>
+    <script defer src='assets/script/cards.js'></script>
+    <!--Snap Scroll module-->
+    
+    <!--Snap Scroll module-->
+    <link rel='stylesheet' href='assets/style/snapscroll.css'>
+    <script defer src='assets/script/snapscroll.js'></script>
+    <!--Snap Scroll module-->
+    
+    <!--Cursor module-->
+    <link rel='stylesheet' href='assets/style/cursor.css'>
+    <script defer src='assets/script/cursor.js'></script>
+    <!--Cursor module-->
+    
+    <!--Notifications module-->
+    <link rel='stylesheet' href='assets/style/notifications.css'>
+    <script defer src='assets/script/notifications.js'></script>
+    <!--Notifications module-->
+    
+    <!--Navbar module-->
+    <link rel='stylesheet' href='assets/style/navbar.css'>
+    <!--Cursor module-->
+
+</head>
+<body>
+    <div class="notification__container" id="notification__container"></div>
+
+    <div id="not__a__proj__modal">
+        <p class="title">This project does not seem to exist!</p>
+        <button class="primary" style="padding: 10px 30px;" data-cursor-event="link" onclick="window.location.href = 'index.html#page__projects'">View all projects</button>
+    </div>
+
+    <div class="back__button nav__button" data-cursor-event="default">
+        <img src="assets/media/icon/back.svg" alt="back">
+    </div>
+
+    <div class="right__buttons">
+        <!--JS will generate here-->
+    </div>
+
+    <div class="title__container">
+        <p class="title">$name$</p>
+        <p class="subtitle">$description_short$</p>
+
+        <div class="categories row" id="title__categories">
+            <!--JS will generate here-->
+        </div>
+
+        <span class="hr"></span>
+        <br>
+
+        <div class="row" id="title__links">
+            <!--JS will generate here-->
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="primary">
+            <img src="$logo$" alt="$logo$" class="icon">
+        
+            <details open>
+                <summary data-cursor-event="none"><p class="title" style="display: inline-block; font-size: 1.8rem;">Table of contents</p></summary>
+
+                <ol id="table__of__contents">
+                    <!--JS will generate here-->
+                </ol>
+            </details>
+        </section>
+
+        <span class="hr"></span>
+
+        <section class="primary">
+            <p class="title" id="about">About</p>
+            <p>$description$</p>
+
+            <h2>Technologies used</h2>
+            <div class="categories row" id="technologies_used">
+                <!--JS will generate here-->
+            </div>
+
+            <h2>Contributors</h2>
+            <div class="categories row" id="contributors">
+                <!--JS will generate here-->
+            </div>
+        </section>
+    </div>
+
+    <div class="footer" style="background: black;">
+        <div class="row" style="align-items: start; justify-content: center;">
+            <div class="section" id="footer__table">
+                <p class="title">Content</p>
+                <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                <!--JS will generate here-->
+            </div>
+
+            <br>
+    
+            <div class="section" id="footer__links">
+                <p class="title">Links</p>
+                <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                <!--JS will generate here-->
+            </div>
+
+            <br>
+
+            <div class="section">
+                <p class="title">Pages</p>
+                <span class="hr" style="opacity: 1; margin: 5px 0;"></span>
+                <p><a data-cursor-event="link" href="index.html#page__about">About</a></p>
+                <p><a data-cursor-event="link" href="index.html#page__projects">Projects</a></p>
+                <p><a data-cursor-event="link" href="index.html#page__social">Social</a></p>
+                <p><a data-cursor-event="link" href="index.html#page__contact">Contact</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--Load data from project json-->
+<link rel='stylesheet' href='assets/style/project.css'>
+<script src="assets/script/project.js"></script>
+<!--Load data from project json-->
