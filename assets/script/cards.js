@@ -36,4 +36,4 @@ setTimeout(() => {
             element.style.transform = "";
         });
     });
-}, 50);
+}, 150);
