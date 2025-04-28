@@ -1,5 +1,6 @@
 // Handle scroll
 const pages = document.querySelector("#pages");
+let pagesSidePanel = document.querySelector("#pages .sections__panel");
 const scrollToPage = (id) => {
     pages.scroll({ top: pages.clientHeight * id, left: 0, behavior: 'smooth' })
 }
@@ -49,6 +50,7 @@ if (starMask != null) {
 
     pages.addEventListener("scroll", () => {
         starMask.style.display = pages.scrollTop > 30 ? "none" : "unset";
+        pagesSidePanel.style.opacity = pages.scrollTop > 30 ? "1" : "0";
     });
 }
 
