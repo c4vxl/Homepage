@@ -4,7 +4,10 @@ body {
 
 body.dark {
     background: var(--bg);
+}
 
+body:not(.dark) {
+    --bg-2: #FAFAFA;
 }
 
 .title__container {
