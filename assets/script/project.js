@@ -1,6 +1,6 @@
 (async () => {
     const args = new URLSearchParams(window.location.search);
-    const from = args.get("from") || "index.html";
+    const from = args.get("from") || "index.html#page__projects";
     const name = args.get("id");
 
     document.querySelector(".back__button").setAttribute("onclick", `window.location.href = '${from}'`);
@@ -35,8 +35,8 @@
     });
 
     data.links.forEach(link => {
-        document.querySelector("#title__links").innerHTML += `<a href="${link.src}" data-cursor-event="link">${link.name} <span class="arrow__left">→</span></a>`;
-        document.querySelector("#footer__links").innerHTML += `<p><a href="${link.src}" data-cursor-event="link">${link.name}</a></p>`;
+        document.querySelector("#title__links").innerHTML += `<a href="${link.src}" style="gap: 10px" class="row" data-cursor-event="link">${link.name} <span class="arrow__left">→</span></a>`;
+        document.querySelector("#footer__links").innerHTML += `<p><a href="${link.src}" style="gap: 10px; width: max-content;" class="row" data-cursor-event="link">${link.name}</a></p>`;
     });
 
     data.contributors.forEach(c => {

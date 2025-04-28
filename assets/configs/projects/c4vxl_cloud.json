@@ -17,32 +17,46 @@
     "content": {
         "Features": [
             { "type": "title", "content": "Features" },
-            { "type": "row", "style": "flex-wrap: nowrap;", "content": [
-                { "type": "img", "src": "assets/media/projects/c4vxl_cloud/friends.jpeg", "alt": "friends" },
-                { "type": "div", "content": [
+            { "type": "row", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9", "src": "assets/media/projects/c4vxl_cloud/friends.jpeg", "alt": "friends" },
+                { "type": "div", "class": "half__text", "style": "flex-grow: 0", "content": [
                     { "type": "h2", "content": "Friend System" },
-                    { "type": "span", "content": "With our intuitive friend system, connecting and collaborating has never been easier. Share files effortlessly with your trusted network of friends directly from our Cloud Platform." }
+                    { "type": "span", "content": "Add other users as friends and share your files effortlessly via <b>c4vxl cloud</b>" }
                 ] }
             ] },
 
             { "type": "span", "class": "hr" },
 
-            { "type": "row", "style": "flex-wrap: nowrap;", "content": [
-                { "type": "div", "content": [
+            { "type": "row", "content": [
+                { "type": "div", "class": "half__text", "style": "flex-grow: 0", "content": [
                     { "type": "h2", "content": "Backup System" },
-                    { "type": "span", "content": "Safeguard your important data and never worry about data loss again. Navigate to our backup page and effortlessly create backups of your important files with just a few clicks." }
+                    { "type": "span", "content": "Safeguard your important data and never worry about data loss again via backups." }
                 ]},
-                { "type": "img", "src": "assets/media/projects/c4vxl_cloud/backups.jpeg", "alt": "backups" }
+                { "type": "img", "style": "aspect-ratio: 16 / 9", "src": "assets/media/projects/c4vxl_cloud/backups.jpeg", "alt": "backups" }
             ] },
 
             { "type": "span", "class": "hr" },
 
-            { "type": "row", "style": "flex-wrap: nowrap;", "content": [
-                { "type": "img", "src": "assets/media/projects/c4vxl_cloud/account.jpeg", "alt": "account" },
-                { "type": "div", "content": [
+            { "type": "row", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9", "src": "assets/media/projects/c4vxl_cloud/account.jpeg", "alt": "account" },
+                { "type": "div", "class": "half__text", "content": [
                     { "type": "h2", "content": "Account System" },
-                    { "type": "span", "content": "Tailor your profile to reflect your unique identity and preferences. Upload a profile picture to add a personal touch, change your username to make it uniquely yours, and set a brief description to share more about yourself with the community." }
+                    { "type": "span", "content": "Personalize your appearance by customizing your profile" }
                 ]}
+            ] }
+        ],
+        "Supported Languages": [
+            { "type": "title", "content": "Supported Languages" },
+            { "type": "span", "class": "hr" },
+            { "type": "row", "content": [
+                { "type": "span", "class": "primary", "content": "English" },
+                { "type": "span", "class": "primary", "content": "German" },
+                { "type": "span", "class": "primary", "content": "French" },
+                { "type": "span", "class": "primary", "content": "Mandarin Chinese" },
+                { "type": "span", "class": "primary", "content": "Spanish" },
+                { "type": "span", "class": "primary", "content": "Hindi" },
+                { "type": "span", "class": "primary", "content": "Arabic" },
+                { "type": "span", "class": "primary", "content": "Portuguese" }
             ] }
         ]
     }

@@ -48,7 +48,7 @@ if (starMask != null) {
     }
 
     pages.addEventListener("scroll", () => {
-        starMask.style.display = pages.scrollTop > 10 ? "none" : "unset";
+        starMask.style.display = pages.scrollTop > 30 ? "none" : "unset";
     });
 }
 
