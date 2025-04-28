@@ -7,7 +7,7 @@ body.dark {
 }
 
 body:not(.dark) {
-    --bg-2: #FAFAFA;
+    --bg-2: #7a79790a;
 }
 
 .title__container {
