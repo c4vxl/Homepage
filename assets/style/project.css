@@ -1,3 +1,7 @@
+:root {
+    --font: "__calSans_95396e", "__calSans_Fallback_95396e";
+}
+
 body {
     background: white;
 }

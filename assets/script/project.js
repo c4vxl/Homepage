@@ -96,7 +96,8 @@
 }); })()
 
 // darkmode button
-let darkmode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+let darkmode = false; // start of with white mode
+// darkmode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; // uncomment to auto-detect light/darkmode
 const setDarkmode = (isMode) => {
     darkmode = isMode;
     document.querySelector("#darkmode__button__moon").style.display = isMode ? "unset" : "none";

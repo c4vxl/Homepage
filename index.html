@@ -46,7 +46,7 @@
 </head>
 <body style="overflow: hidden;">
     <div class="blur look__at__mouse" style="width: 50ch; top: -25ch; left: -25ch; --c: rgb(51, 50, 50);"></div>
-    <div class="blur look__at__mouse" style="width: 40ch; top: 90%; left: 90%;"></div>
+    <div class="blur look__at__mouse" style="width: 40ch; top: 90%; left: 90%; --c: rgb(51, 50, 50);"></div>
 
     <div class="notification__container" id="notification__container"></div>
 
@@ -90,10 +90,12 @@
                     <div class="column">
                         <div class="primary" threeD-card data-threeD-card-strength="2">
                             <p style="font-size: 1.4rem; margin-top: 0;">Skills:</p>
-                            <li>Web Technologies: HTML, CSS, JS, PHP</li>
-                            <li>AI: Python, NumPy, PyTorch, Tensorflow, HuggingFace</li>
-                            <li>Apps and Serverside: Java, Kotlin, Python</li>
-                            <li>General: Git, GitHub, Figma, Linux (I use arch btw), etc.</li>
+                            <ul style="line-height: 30px;">
+                                <li>Web Technologies: <span class="primary small__padding">HTML</span>, <span class="primary small__padding">CSS</span>, <span class="primary small__padding">JS</span>, <span class="primary small__padding">PHP</span></li>
+                                <li>AI: <span class="primary small__padding">Python</span>, <span class="primary small__padding">NumPy</span>, <span class="primary small__padding">PyTorch</span>, <span class="primary small__padding">HuggingFace</span></li>
+                                <li>Apps and Serverside: <span class="primary small__padding">Java</span>, <span class="primary small__padding">Kotlin</span>, <span class="primary small__padding">Python</span></li>
+                                <li>General: <span class="primary small__padding">Git</span>, <span class="primary small__padding">GitHub</span>, <span class="primary small__padding">Figma</span>, <span class="primary small__padding">Linux (I use arch btw)</span>, <span class="primary small__padding">etc.</span></li>
+                            </ul>
                         </div>
     
                         <div class="primary" threeD-card data-threeD-card-strength="2">
@@ -180,14 +182,14 @@
 
                         <div>
                             <p>Send a mail to:</p>
-                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail" data-threeD-card-strength="7">
+                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail" data-threeD-card-strength="7" onclick="window.open('mailto:contact@c4vxl.de')">
                                 <p class="title" style="font-size: 1.4rem; user-select: none;">contact@c4vxl.de</p>
                                 <p class="subtitle">For collaboration requests, questions or general inquiries</p>
                             </div>
 
                             <br>
 
-                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail" data-threeD-card-strength="7">
+                            <div class="primary" threeD-card style="cursor: none;" data-cursor-event="mail" data-threeD-card-strength="7" onclick="window.open('mailto:idea@c4vxl.de')">
                                 <p class="title" style="font-size: 1.4rem; user-select: none;">idea@c4vxl.de</p>
                                 <p class="subtitle">For project ideas</p>
                             </div>

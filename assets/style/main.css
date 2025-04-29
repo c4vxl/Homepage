@@ -3,9 +3,11 @@
     --bg-1: #0a0a0a;
     --bg-2: #121212;
     --border: #7a797980;
-    --text: rgb(212, 207, 207);
-    --primary: #dbd7d7;
+    --text: #d4cfcf;
+    --primary: #181717;
+    --highlight: #ffffffb7;
     --font: 'Courier New', Courier, monospace;
+    --cursor: #d4cfcf;
 }
 
 body, html {
@@ -72,7 +74,7 @@ a:hover:after { width: 100%; }
     position: fixed;
     width: 20ch;
     aspect-ratio: 1;
-    --c: #ffffffb7;
+    --c: var(--highlight);
     background: radial-gradient(var(--c), transparent);
     opacity: .5;
     top: 0;
@@ -110,7 +112,7 @@ section {
 }
 
 .avatar {
-    background: var(--text);
+    background: var(--highlight);
     width: 10ch;
     aspect-ratio: 1;
     object-fit: contain;
@@ -149,6 +151,10 @@ section {
 }
 .primary:not(:hover) .blur { opacity: 0; }
 
+.small__padding {
+    padding: 0px 10px;
+}
+
 textarea {
     resize: none;
     min-height: 30ch;
@@ -166,7 +172,7 @@ button.primary {
     cursor: pointer;
 }
 button.primary:hover {
-    background: #181717;
+    background: var(--primary);
 }
 
 /**

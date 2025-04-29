@@ -10,9 +10,9 @@
     width: 0.5ch;
     aspect-ratio: 1;
 
-    border: 2px solid var(--text);
+    border: 2px solid var(--cursor);
     border-radius: 300px;
-    background: var(--text);
+    background: var(--cursor);
     opacity: 0;
 
     padding: 14px;
@@ -29,7 +29,7 @@ body:hover > .cursor { opacity: 1; }
 }
 
 *[data-cursor-event]:hover { cursor: none; }
-body:has(*[data-cursor-event]:hover) .cursor, body:has(text:hover) .cursor, body:has(span:hover) .cursor, body:has(h2:hover) .cursor, body:has(p:hover) .cursor { background: transparent; width: 5ch; }
+body:has(*[data-cursor-event]:hover) .cursor, body:has(text:hover) .cursor, body:has(span:hover) .cursor, body:has(li:hover) .cursor, body:has(h2:hover) .cursor, body:has(p:hover) .cursor { background: transparent; width: 5ch; }
 body:has(*[data-cursor-event="link"]:hover) .cursor #cursor__icon__link { display: unset; }
 body:has(*[data-cursor-event="mail"]:hover) .cursor #cursor__icon__mail { display: unset; }
 *[data-cursor-event="default"]:hover { cursor: pointer; }
