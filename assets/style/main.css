@@ -245,3 +245,7 @@ button.primary:hover {
 @media (min-width: 600px) {
     .phone__top__space { display: none; }
 }
+
+#pages .snap__scroll__section section:first-child {
+    margin-top: 30px;
+}
