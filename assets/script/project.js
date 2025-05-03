@@ -1,7 +1,7 @@
 (async () => {
     const args = new URLSearchParams(window.location.search);
     const from = args.get("from") || "index.html#page__projects";
-    const name = args.get("id");
+    const name = args.get("id").toLowerCase();
 
     document.querySelector(".back__button").setAttribute("onclick", `window.location.href = '${from}'`);
 
