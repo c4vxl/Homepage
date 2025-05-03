@@ -1,9 +1,11 @@
 (async () => {
     const args = new URLSearchParams(window.location.search);
     const from = args.get("from") || "index.html#page__projects";
-    const name = args.get("id").toLowerCase();
+    const name = args.get("id")?.toLowerCase();
 
     document.querySelector(".back__button").setAttribute("onclick", `window.location.href = '${from}'`);
+
+    document.querySelector("#footer__data").href = `assets/configs/projects/${name}.json`;
 
     let data;
     try {
