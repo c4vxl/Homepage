@@ -1,0 +1,55 @@
+{
+    "title": "c4OS",
+    "description_short": "My (kind of) own operating system.",
+    "description": "c4OS is my custom-build operating system based on Arch Linux. I wrote my own installer that automatically sets up a fully configured environment and installs some of my custom apps.",
+    "categories": [ "Linux", "OS", "complete" ],
+    "nav_links": [
+        { "icon": "assets/media/icon/github.svg", "link": "https://github.com/c4vxl/c4OS" }
+    ],
+    "links": [
+        { "name": "Visit on GitHub", "src": "https://github.com/c4vxl/c4OS" }
+    ],
+    "technologies": [ "Shell", "Linux", "GitHub", "Python" ],
+    "contributors": [ { "name": "c4vxl", "href": "https://c4vxl.de" } ],
+    "content": {
+        "Setup UI": [
+            { "type": "title", "content": "Installer" },
+            { "type": "div", "class": "column", "style": "align-items: center", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9; max-width: 90ch", "src": "assets/media/projects/c4OS/1.jpeg", "alt": "1" }
+            ] },
+
+            { "type": "span", "class": "hr" },
+
+            { "type": "div", "class": "column", "style": "align-items: center", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9; max-width: 90ch", "src": "assets/media/projects/c4OS/2.jpeg", "alt": "2" }
+            ] },
+
+            { "type": "span", "class": "hr" },
+
+            { "type": "div", "class": "column", "style": "align-items: center", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9; max-width: 90ch", "src": "assets/media/projects/c4OS/3.jpeg", "alt": "3" },
+                { "type": "div", "class": "half__text", "style": "flex-grow: 0", "content": [
+                    { "type": "span", "content": "Select or create partitions in app." }
+                ] }
+            ] },
+
+            { "type": "span", "class": "hr" },
+
+            { "type": "div", "class": "column", "style": "align-items: center", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9; max-width: 90ch", "src": "assets/media/projects/c4OS/4.jpeg", "alt": "4" },
+                { "type": "div", "class": "half__text", "style": "flex-grow: 0", "content": [
+                    { "type": "span", "content": "Pick multiple preinstalled applications." }
+                ] }
+            ] },
+
+            { "type": "span", "class": "hr" },
+
+            { "type": "div", "class": "column", "style": "align-items: center", "content": [
+                { "type": "img", "style": "aspect-ratio: 16 / 9; max-width: 90ch", "src": "assets/media/projects/c4OS/5.jpeg", "alt": "5" },
+                { "type": "div", "class": "half__text", "style": "flex-grow: 0", "content": [
+                    { "type": "span", "content": "You can select between different themes for the operating system, which consist out of all of my previous linux rices." }
+                ] }
+            ] }
+        ]
+    }
+}

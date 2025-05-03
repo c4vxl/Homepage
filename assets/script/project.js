@@ -22,9 +22,10 @@
 
     let source = document.querySelector("html").innerHTML;
     source = source.replaceAll("$name$", data.title);
-    source = source.replaceAll("$logo$", data.logo);
     source = source.replaceAll("$description_short$", data.description_short).replaceAll("$description$", data.description);
     document.querySelector("html").innerHTML = source;
+
+    data.logo ? document.querySelector("#logo").src = data.logo : document.querySelector("#logo").remove();
 
     data.categories.forEach(category => {
         document.querySelector("#title__categories").innerHTML += `<span class="primary" data-cursor-event="none">${category}</span>`

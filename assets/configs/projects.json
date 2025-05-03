@@ -1,9 +1,15 @@
 [
     {
-        "pos": 3,
+        "pos": 4,
         "name": "JNN",
         "description": "I am currently building a PyTorch-like neural networking library from scratch in java",
         "url": "project.html?id=jnn"
+    },
+    {
+        "pos": 3,
+        "name": "c4OS",
+        "description": "My (kind of) own operating system.",
+        "url": "project.html?id=c4OS"
     },
     {
         "pos": 1,
