@@ -17,4 +17,4 @@ setTimeout(() => {
             fill: "forwards"
         } );
     };
-}, 50);
+}, 150);

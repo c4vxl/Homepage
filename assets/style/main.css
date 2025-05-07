@@ -212,6 +212,10 @@ button.primary:hover {
     font-weight: 700;
 }
 
+@media (max-width: 740px) {
+    .project__list { justify-content: center; }
+}
+
 /**
  * Footer
  */

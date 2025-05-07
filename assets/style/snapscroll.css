@@ -47,5 +47,5 @@
     overflow-y: scroll;
     padding: 0px 10px;
 }
-.snap__scroll__container .content .snap__scroll__section *:first-child { margin-top: 10px; }
-.snap__scroll__container .content .snap__scroll__section *:last-child { margin-bottom: 10px; }
+.snap__scroll__container .content .snap__scroll__section section { padding: 23px 0px; }
+.snap__scroll__container .content .snap__scroll__section section *:last-child { margin-bottom: 10px; }
