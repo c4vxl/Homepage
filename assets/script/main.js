@@ -5,6 +5,10 @@ const scrollToPage = (id) => {
     pages.scroll({ top: pages.clientHeight * id, left: 0, behavior: 'smooth' })
 }
 
+let page = Number(new URLSearchParams(window.location.search).get("page") || "0");
+
+setTimeout(() => pages.scrollTop = page * pages.clientHeight, 50);
+
 // Title handler
 (async () => {
     const title = document.querySelector("#intro__title");

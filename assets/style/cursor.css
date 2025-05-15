@@ -38,3 +38,7 @@ body:has(*[data-cursor-event="default"]:hover) .cursor { opacity: 0; }
 @media (max-width: 700px) {
     .cursor { display: none; }
 }
+
+@media (pointer: coarse) {
+    .cursor { display: none; }
+}
