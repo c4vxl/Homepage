@@ -110,7 +110,7 @@ if (!window.location.pathname.endsWith("project.html")) {
             console.log(proj)
             const element = document.querySelector(".project__list");
             element.insertAdjacentHTML("afterbegin", `
-            <li data-cursor-event="link" class="primary" threeD-card onclick="window.open('${proj.url}')">
+            <li data-cursor-event="link" class="primary" threeD-card onclick="window.location.href = '${proj.url}';">
                 <div class="blur"></div>
                 <p class="title">${proj.name}</p>
                 <br>
