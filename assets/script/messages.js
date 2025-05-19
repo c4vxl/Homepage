@@ -31,6 +31,9 @@ const reloadMessages = () => {
                 let time = element.time.split(" ");
                 createMessage(element.name, element.email, time[0].split("-").reverse().join(".") + " - " + time[1], element.message, i) 
             });
+        })
+        .catch(e => {
+            document.querySelector("#message__container").innerHTML = "<p id='no__msgs'>It seems like there are no messages!</p>";
         });
 }
 
